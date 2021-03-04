@@ -1,0 +1,5 @@
+gfortran -c -fPIC real_hello_world2.f90 -o real_hello_world2.o
+gfortran -c -fPIC real_wrapper2.f90 -o real_wrapper2.o
+ar -rcs libreal2.a real_wrapper2.o real_hello_world2.o
+python buildeal2.py
+python pfile.py
